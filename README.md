@@ -26,6 +26,7 @@ IF YOU WANT TO START A PROJECT RIGH AFTER CLONING THIS REPO
 *****
 
 $ git clone https://github.com/diboanches/django-app-docker
+
 $ docker-compose run web django-admin.py startproject composeexample .
 
 (!) Do not forget about ALLOWED_HOSTS
