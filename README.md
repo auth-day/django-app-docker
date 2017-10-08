@@ -13,6 +13,20 @@ $ git clone https://github.com/diboanches/django-app-docker
 
 $ mv django-app-docker/* . 
 
+change database connection: 
+
+vi setting.py 
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'HOST': 'db',
+        'PORT': 5432,
+    }
+}
+
 $ docker-compose up
 
 Just in case: I tested it out on AWS, so I faced an issue: 
@@ -35,6 +49,20 @@ IF YOU WANT TO START A PROJECT RIGH AFTER CLONING THIS REPO
 $ git clone https://github.com/diboanches/django-app-docker
 
 $ docker-compose run web django-admin.py startproject composeexample .
+
+change database connection: 
+
+vi setting.py 
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'HOST': 'db',
+        'PORT': 5432,
+    }
+}
 
 (!) Do not forget about ALLOWED_HOSTS
 
