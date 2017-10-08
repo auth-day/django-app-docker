@@ -5,7 +5,11 @@ This is my mini tutorial for how to use all these files.
 IF YOU HAVE ALREADY HAVE A DJANGO PROJECT
 *****
 
-You need to copy these files: Dockerfile and docker-compose.yml to your project directory and type: 
+You need to copy these files: Dockerfile and docker-compose.yml to your project directory:
+
+$ cd your_project_dir
+$ git clone https://github.com/diboanches/django-app-docker 
+$ mv django-app-docker/* . 
 $ docker-compose up
 
 Just in case: I tested it out on AWS, so I faced an issue: 
